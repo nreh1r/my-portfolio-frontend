@@ -1,0 +1,96 @@
+.contact__container {
+    background-color: var(--primary-color);
+    flex: 1;
+    min-height: 100vh;
+    max-width: 100%;
+    padding-top: 5.5rem;
+    overflow: none;
+    position: relative;
+}
+
+.contact__header {
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--font-base);
+    color: #000;
+    font-size: 2rem;
+
+    span {
+        color: rgb(77, 44, 240);
+
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 2000px) {
+        font-size: 3.5rem;
+    }
+}
+
+.contact__container-transition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+
+    form {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+
+        input,
+        textarea {
+            margin-bottom: 2rem;
+            height: 2.5rem;
+            font-family: var(--font-base);
+            text-indent: 4px;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+
+            &:focus {
+                outline: none;
+                border: 2px solid rgb(77, 44, 240) !important;
+            }
+        }
+
+        textarea {
+            height: 250px;
+        }
+
+        button {
+            font-family: var(--font-base);
+            background-color: rgb(77, 44, 240);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            width: 135px;
+            height: 50px;
+
+            &:hover {
+                background-color: rgb(120, 97, 232);
+            }
+
+            &:active {
+                background-color: rgb(35, 0, 212);
+            }
+        }
+    }
+}
+
+.contact__message {
+    font-family: var(--font-base);
+    text-align: center;
+    color: var(--gray-color);
+    background-color: #03fc56;
+    padding: 1rem 1.5rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
